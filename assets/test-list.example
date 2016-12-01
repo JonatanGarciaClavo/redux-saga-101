@@ -1,0 +1,19 @@
+describe('Testing fetchContacts', () => {
+  describe('Success flow', () => {
+    const it = sagaHelper(fetchContacts());
+    it(`should have called the mock API first, which we are going
+ to specify the results of`, result => {
+      expect(result).toEqual(call(ContactsServices.list));
+      return contacts;
+    });
+    it(`and then trigger an action with the transformed
+ data we got from the API`, result => {
+      expect(result).toEqual(
+        put(ContactListActions.recieveContactList(contacts))
+      );
+    });
+    it('and then nothing', result => {
+      expect(result).toBeUndefined();
+    });
+  });
+});

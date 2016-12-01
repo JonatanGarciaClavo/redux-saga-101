@@ -1,0 +1,15 @@
+function *foo() {
+    yield 1;
+    yield 2;
+    yield 3;
+    yield 4;
+    yield 5;
+}
+
+const it = foo();
+console.log( it.next() ); // { value:1, done:false }
+console.log( it.next() ); // { value:2, done:false }
+console.log( it.next() ); // { value:3, done:false }
+console.log( it.next() ); // { value:4, done:false }
+console.log( it.next() ); // { value:5, done:false }
+console.log( it.next() ); // { value:undefined, done:true }

@@ -1,0 +1,22 @@
+export function* saveContact() {
+  try {
+    yield put(ContactActions.validateContact());
+    const { errors, contact } = yield select(contactSelector);
+    if (_.isEmpty(errors)) {
+      const save = contact.id ? 'update' : 'create';
+      yield call(ContactsServices[save], contact)
+      yield call(browserHistory.push, '/list');
+    } else {
+      yield put(SnackbarActions.displayError('Contact has errors'));
+    }
+  } catch (err) {
+    yield put(SnackbarActions.displayError(err));
+  }
+}
+
+export function* requestSaveContact() {
+  while (true) {// eslint-disable-line
+    yield take(REQUEST_SAVE_CONTACT);
+    yield call(saveContact);
+  }
+}

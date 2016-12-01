@@ -1,0 +1,26 @@
+describe('Testing saveContact', () => {
+  describe('Success update flow', () => {
+    const it = sagaHelper(saveContact());
+    it('should trigger and validate action', result => {
+      expect(result).toEqual(put(ContactActions.validateContact()));
+    });
+    it('should select errors and contact to be saved', result => {
+      expect(result).toEqual(select(contactSelector));
+      return {
+        errors: {},
+        contact,
+      };
+    });
+    it(`should have called the mock API first, which we are going
+ to specify the results of`, result => {
+      expect(result).toEqual(call(ContactsServices.update, contact));
+      return contact;
+    });
+    it('redirect to /list', result => {
+      expect(result).toEqual(call(browserHistory.push, '/list'));
+    });
+    it('and then nothing', result => {
+      expect(result).toBeUndefined();
+    });
+  });
+});
