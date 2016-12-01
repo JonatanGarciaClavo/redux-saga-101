@@ -72,9 +72,9 @@ export default class Presentation extends React.Component {
               Summary
             </Heading>
             <List>
-              <Appear><ListItem textFont="secundary" textColor="secundary">What is saga pattern?</ListItem></Appear>
-              <Appear><ListItem textFont="secundary" textColor="secundary">What is generators?</ListItem></Appear>
-              <Appear><ListItem textFont="secundary" textColor="secundary">What is effects?</ListItem></Appear>
+              <Appear><ListItem textFont="secundary" textColor="secundary">What is a saga pattern?</ListItem></Appear>
+              <Appear><ListItem textFont="secundary" textColor="secundary">What are generators?</ListItem></Appear>
+              <Appear><ListItem textFont="secundary" textColor="secundary">What are effects?</ListItem></Appear>
               <Appear><ListItem textFont="secundary" textColor="secundary">Examples</ListItem></Appear>
               <Appear><ListItem textFont="secundary" textColor="secundary">Testing</ListItem></Appear>
               <Appear><ListItem textFont="secundary" textColor="secundary">Why redux saga?</ListItem></Appear>
@@ -82,13 +82,13 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is saga pattern?
+              What is a saga pattern?
             </Heading>
             <Appear><Image src={images.wat.replace("/", "")} margin="0px auto 40px" height="600px"/></Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is saga pattern?
+              What is a saga pattern?
             </Heading>
             <List>
               <Appear><ListItem textFont="secundary" textColor="secundary">Written by Hector Garcia-Molina in 1987</ListItem></Appear>
@@ -99,7 +99,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is saga pattern?
+              What is a saga pattern?
             </Heading>
             <Text style={{margin: "3em 0"}} textAlign="justify" textFont="secundary" textColor="secundary">A Saga is a set of rules for routing a job to multiple collaborating parties, and allowing these parties to backtrack and/or take corrective action in the case of failure.</Text>
             <Link href="http://kellabyte.com/2012/05/30/clarifying-the-saga-pattern/">
@@ -108,17 +108,17 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is generators?
+              What are generators?
             </Heading>
             <Appear><Image src={images.what.replace("/", "")} margin="0px auto 40px" height="600px"/></Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is generators?
+              What are generators?
             </Heading>
              <List>
               <Appear><ListItem textFont="secundary" textColor="secundary">Way to handle async code</ListItem></Appear>
-              <Appear><ListItem textFont="secundary" textColor="secundary">JS functions that returs a generator object when it is called</ListItem></Appear>
+              <Appear><ListItem textFont="secundary" textColor="secundary">JS functions that return a generator object when they are called</ListItem></Appear>
               <Appear><ListItem textFont="secundary" textColor="secundary">Starts "pause"</ListItem></Appear>
               <Appear><ListItem textFont="secundary" textColor="secundary"><S type="italic">yield</S> keyword</ListItem></Appear>
               <Appear><ListItem textFont="secundary" textColor="secundary">Function body execution pauses on <S type="italic">yield</S></ListItem></Appear>
@@ -152,13 +152,13 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is effects?
+              What are effects?
             </Heading>
             <Appear><Image src={images.magic.replace("/", "")} margin="0px auto 40px" height="600px"/></Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is effects?
+              What are effects?
             </Heading>
              <List>
               <Appear><ListItem textFont="secundary" textColor="secundary">JS Objects</ListItem></Appear>
@@ -172,7 +172,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
             <Heading size={2} caps textColor="primary" textFont="labmedium">
-              What is effects?
+              What are effects?
             </Heading>
              <List>
               <Appear><ListItem textFont="secundary" textColor="secundary"><S type="italic">take</S> - to wait for a specified action </ListItem></Appear>

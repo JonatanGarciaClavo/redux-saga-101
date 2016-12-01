@@ -8,7 +8,7 @@ import ContactsServices from '../services/contacts-services';
 export function* fetchContacts() {
   try {
     const contacts = yield call(ContactsServices.list)
-    yield put(ContactListActions.recieveContactList(contacts));
+    yield put(ContactListActions.receiveContactList(contacts));
   } catch (err) {
     yield put(SnackbarActions.displayError(err));
   }
