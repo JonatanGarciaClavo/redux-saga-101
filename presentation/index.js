@@ -68,7 +68,7 @@ export default class Presentation extends React.Component {
             <Image width="95%" src={images.reduxSagaLogo.replace("/", "")}/>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Summary
             </Heading>
             <List>
@@ -81,13 +81,13 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What is a saga pattern?
             </Heading>
             <Appear><Image src={images.wat.replace("/", "")} margin="0px auto 40px" height="600px"/></Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What is a saga pattern?
             </Heading>
             <List>
@@ -98,7 +98,7 @@ export default class Presentation extends React.Component {
             <Appear><Image src={images.sagaFlow.replace("/", "")} margin="0px auto 40px" height="250px"/></Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What is a saga pattern?
             </Heading>
             <Text style={{margin: "3em 0"}} textAlign="justify" textFont="secundary" textColor="secundary">A Saga is a set of rules for routing a job to multiple collaborating parties, and allowing these parties to backtrack and/or take corrective action in the case of failure.</Text>
@@ -107,13 +107,13 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What are generators?
             </Heading>
             <Appear><Image src={images.what.replace("/", "")} margin="0px auto 40px" height="600px"/></Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What are generators?
             </Heading>
              <List>
@@ -129,7 +129,7 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Generator syntax
             </Heading>
             <CodePane
@@ -140,7 +140,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Generator example
             </Heading>
             <CodePane
@@ -151,13 +151,13 @@ export default class Presentation extends React.Component {
             />
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What are effects?
             </Heading>
             <Appear><Image src={images.magic.replace("/", "")} margin="0px auto 40px" height="600px"/></Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What are effects?
             </Heading>
              <List>
@@ -171,7 +171,7 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               What are effects?
             </Heading>
              <List>
@@ -185,7 +185,7 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Redux saga list example
             </Heading>
             <CodePane
@@ -209,7 +209,7 @@ export default class Presentation extends React.Component {
             ]}
           />
         <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Redux saga update example
             </Heading>
             <CodePane
@@ -233,7 +233,7 @@ export default class Presentation extends React.Component {
             ]}
           />
         <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Test list example
             </Heading>
             <CodePane
@@ -254,7 +254,7 @@ export default class Presentation extends React.Component {
             ]}
           />
         <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Test list example
             </Heading>
             <CodePane
@@ -277,7 +277,7 @@ export default class Presentation extends React.Component {
             ]}
           />
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Why redux saga?
             </Heading>
             <List>
@@ -288,7 +288,7 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor={bgColor}>
-            <Heading size={2} caps textColor="primary" textFont="labmedium">
+            <Heading size={2} caps textColor="primary">
               Questions?
             </Heading>
             <Link href="https://github.com/JonatanGarciaClavo/redux-saga-101">
